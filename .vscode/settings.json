@@ -1,0 +1,30 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "cmsc508.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "hr_cmsc508",
+            "database": "202310_hr_maksoudj",
+            "username": "maksoudj",
+            "password": "Shout4_maksoudj_GOME"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "db.virginia-c4.cloud",
+            "port": 7833,
+            "driver": "MySQL",
+            "name": "capstone data",
+            "database": "project_codeva",
+            "username": "maksoudj",
+            "password": "Shout4_maksoudj_GO_ME"
+        }
+    ]
+}
