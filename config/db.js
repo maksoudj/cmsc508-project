@@ -2,11 +2,11 @@ import mysql from "serverless-mysql";
 
 const pool = mysql({
   config: {
-    host: "codeva.virginia-c4.cloud",
+    host: "cmsc508.com",
     user: "maksoudj",
-    password: "Shout4_maksoudj_GO_ME",
-    port: 7833,
-    database: "project_codeva",
+    password: "Shout4_maksoudj_GOME",
+    port: 3306,
+    database: "202310_teams_team23",
   },
 });
 
