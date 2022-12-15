@@ -8782,3 +8782,12 @@ BEGIN
     FROM park_stamps
     WHERE park_stamps.park_code = code;
 END;
+
+CREATE TRIGGER check_park_code_length
+  BEFORE INSERT ON parks
+  FOR EACH ROW
+BEGIN
+  IF length(NEW.park_code) != 4 THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'park_code has to have length 4';
+  END IF;
+END;

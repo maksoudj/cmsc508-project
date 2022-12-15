@@ -9,6 +9,7 @@ const Form = () => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(username)
     axios
       .post('http://localhost:3014/api/user', {
         username,
